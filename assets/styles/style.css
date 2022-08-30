@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.calculator{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.811);
+    padding: 8rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+}
+.buttons{
+    display: flex;
+    user-select: none;
+    gap: 1rem;
+}
+
+.buttons button{
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 0.1rem;
+    border: 2px solid rgb(35, 10, 70);
+    font-size: 1rem;
+}
+
+.number-buttons{
+    width: 10rem;
+}
+.operator-buttons{
+    width: 5.3rem;
+}
+#point{
+    width: 5.27rem;
+}
+.viewfinder{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 1rem;
+    border: 1px solid #d7d7d7;
+    font-size: 1rem;
+    height: 2.5rem;
+    width: 16.3rem;
+    border-radius: 0.3rem;
+    background: rgb(230, 230, 230);
+    color: #000;
+    border: 3px solid rgb(35, 10, 70);
+}
+.p-credits{
+    text-align: center;
+    transition: all 300ms ease-in-out;
+}
+.p-heart{
+    color: red;
+}
+
+.p-link{
+    text-decoration: none;
+    font-style: italic;
+    color: rgb(54, 54, 54);
+}
+.p-credits:hover{
+    font-size: 1.2rem;
+}

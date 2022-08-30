@@ -5,30 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="styles/style.css">
-    <link rel="stylesheet" type="text/css" href="styles/body-animation.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/body-animation.css">
     <title>Calculadora Simples</title>
 </head>
 <body>
-    <div class="calculadora">
-        <h1>Calculadora <span>Simples</span></h1>
-        <div class="inputUser">
-            <input type="number" name="txtn1" id="txtn1" placeholder="Primeiro número">
+    <div class="calculator">
+        <div class="viewfinder">
+            <p id="viewfinder-result"></p>
         </div>
-        <select id="selector">
-            <option value="+">+</option>
-            <option value="-">-</option>
-            <option value="/">÷</option>
-            <option value="*">x</option>
-        </select>
-        <div class="inputUser">
-            <input type="number" name="txtn2" id="txtn2" placeholder="Segundo número">
+        <div class="buttons">
+            <div class="number-buttons">
+                <button onclick="insert(7)" id="7">7</button>
+                <button onclick="insert(8)" id="8">8</button>
+                <button onclick="insert(9)" id="9">9</button>
+                <button onclick="insert(4)" id="4">4</button>
+                <button onclick="insert(5)" id="5">5</button>
+                <button onclick="insert(6)" id="6">6</button>
+                <button onclick="insert(1)" id="1">1</button>
+                <button onclick="insert(2)" id="2">2</button>
+                <button onclick="insert(3)" id="3">3</button>
+                <button onclick="insert(0)" id="0">0</button>
+                <button onclick="insert('.')" id="point">.</button>
+            </div>
+            <div class="operator-buttons">
+                <button onclick="fullClear()"id="full-clean">CE</button>
+                <button onclick="back()"id="clear">C</button>
+                <button onclick="insert('/') "id="division">/</button>
+                <button onclick="insert('*') "id="multiplication">*</button>
+                <button onclick="insert('-')" id="subtraction">-</button>
+                <button onclick="calc()" id="result">=</button>
+                <button onclick="insert('+')" id="plus">+</button>
+            </div>
         </div>
-        <input class="button "type="button" value="CALCULAR" onclick="calcular()">
-        <div id="res"></div>
     </div>
-
-    <p>Made by: harveey</p>
-    <script src="scripts/script.js"></script>
+    <p class="p-credits">Made with <span class="p-heart">♥</span> by <a class="p-link" href="https://www.github.com/joaovictornovais" target="_blank">João Victor</a></p>
+    <script src="assets/scripts/script.js"></script>
 </body>
 </html>
